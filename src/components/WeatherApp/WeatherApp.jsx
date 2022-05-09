@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './WeatherApp.css';
 import Button from '../Button/Button';
 import CardContainer from '../CardContainer/CardContainer';
+import Clock from '../Clock/Clock';
 import {
    capitalLetter,
    celsiusToFahrenheit,
@@ -48,7 +49,6 @@ function WeatherApp({ data, isDayOrNight }) {
                <Button
                   className='btn btn-round btn-location'
                   handleClick={handleRefresh}
-                  /* content={<i className='fa-solid fa-arrows-rotate'></i>} */
                   content={
                      <i
                         id='location-icon'
@@ -68,7 +68,7 @@ function WeatherApp({ data, isDayOrNight }) {
                   handleClick={handleTemperatureConvertion}
                   content={temperature.isCelsius ? '°C To °F' : '°F To °C'}
                />
-               {/* <Clock timezone={data.timezone} /> */}
+               <Clock timezone={data.timezone} />
                <h1 className='location'>
                   <span className='location-icon'>
                      <i className='fa-solid fa-location-dot'></i>
