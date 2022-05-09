@@ -1,0 +1,89 @@
+.btn {
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.btn-round {
+    font-size: 1.1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.btn-location {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
+}
+
+.btn-location #location-icon {
+    transition: all .25s linear;
+}
+
+.btn-convertion {
+    color: #fff;
+    font-weight: bold;
+    padding: .25rem 1rem;
+    border: 1px solid #000;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn.btn-info {
+    box-shadow: 0 0 15px 0 #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: transform 1s ease;
+}
+
+.btn.btn-info.btn-info-open {
+    transform: translate(-50%, 50%) rotate(180deg);
+    transition: all 1s ease;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn:hover {
+        background: rgb(45, 45, 45);
+    }
+    
+    .btn-round {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn.btn-info {
+        bottom: 50%;
+        left: 100%;
+        transform: translate(-50%, 50%) rotate(270deg);
+    }
+
+    .btn-location {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-location:hover > #location-icon {
+        color: #1abbf1;
+        font-size: 2rem;
+        transform: translateY(-50%);
+        transition: all .25s linear;
+    }
+
+    .btn.btn-info.btn-info-open {
+        transform: translate(-50%, 50%) rotate(90deg);
+    }
+
+    .btn-convertion {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+}

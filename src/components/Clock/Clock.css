@@ -1,0 +1,16 @@
+.week-day {
+    font-size: 1.5rem;
+}
+
+.timer {
+    margin: -.25rem 0;
+}
+
+.hours-minutes {
+    font-size: 1.75rem;
+}
+
+.date {
+    font-weight: bold;
+    font-size: .75rem;
+}

@@ -1,0 +1,41 @@
+.error-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-message figure {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+
+.error-message figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.error-text {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 90%;
+}
+
+.location-error {
+    background: rgb(10, 10, 10);
+    color: #fff;
+    height: 100vh;
+}
+
+.weather-error {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .error-text {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 55%;
+    }
+}
