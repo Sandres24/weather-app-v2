@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './WeatherApp.css';
 import Button from '../Button/Button';
 import CardContainer from '../CardContainer/CardContainer';
-import Clock from '../Clock/Clock';
 import {
    capitalLetter,
    celsiusToFahrenheit,
