@@ -69,7 +69,7 @@ function WeatherApp({ data, isDayOrNight }) {
                   handleClick={handleTemperatureConvertion}
                   content={temperature.isCelsius ? '°C To °F' : '°F To °C'}
                />
-               <Clock timezone={data.timezone} />
+               {/* <Clock timezone={data.timezone} /> */}
                <h1 className='location'>
                   <span className='location-icon'>
                      <i className='fa-solid fa-location-dot'></i>
